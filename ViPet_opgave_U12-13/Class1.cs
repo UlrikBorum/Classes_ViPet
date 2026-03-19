@@ -13,7 +13,7 @@
 }
 
 //test
-
+//HEEEEJ MAC BRUGER *SPYT*
 
 
 
@@ -22,6 +22,6 @@
 //TEST
 //TEST
 
-Console.WriteLine();
+
 //TEST
 
