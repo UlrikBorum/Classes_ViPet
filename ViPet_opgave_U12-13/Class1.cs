@@ -6,10 +6,9 @@
         //nyt nyt 
         // bing
 
+        // det mega virker
 
-
-       
-
+        //Elisabeth siger, det virker
     }
 }
 
