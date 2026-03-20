@@ -9,8 +9,6 @@ namespace ViPet_opgave_U12_13
 		#region instance fields 
 		private string _text;
 
-
-
 		#endregion
 
 		#region Constructor 
@@ -23,16 +21,15 @@ namespace ViPet_opgave_U12_13
 		{
 			_text = text;
 		}
-
-
-
+		
 
 		#endregion
 
 		#region properties 
 		public string Text 
-		{ get { return _text; } 
-		set { _text = value; }
+		{ 
+			get { return _text; } 
+			set { _text = value; }
 		}
 
 		#endregion
