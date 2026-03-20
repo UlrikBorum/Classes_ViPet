@@ -63,7 +63,21 @@ namespace ViPet_opgave_U12_13
 
             return null;
         }
+        
+        public List<Userstory> MoveUserstory (int id, Backlog targetBacklog)
+        {
+            foreach (Userstory us in _userstories)
+            {
+                if (id == us.Id)
+                {
+                    targetBacklog.AddUserstory(us);
+                    _userstories.Remove(us);
+                    return _userstories;
+                }
+            }
+            return null;
+		}
 
-        #endregion
-    }
+		#endregion
+	}
 }
