@@ -2,26 +2,8 @@
 {
     public class Class1
     {
-        // NYT
-        //nyt nyt 
-        // bing
 
-        // det mega virker
-
-        //Elisabeth siger, det virker
     }
 }
 
-//test
-//HEEEEJ MAC BRUGER *SPYT*
-
-
-
-
-//TEST THOMAS
-//TEST
-//TEST
-
-
-//TEST
 
