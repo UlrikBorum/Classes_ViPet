@@ -20,6 +20,7 @@ namespace ViPet_opgave_U12_13
         {
             _userstories = new List<Userstory>();
 
+
         }
 
         public Backlog(List<Userstory> userstories)
