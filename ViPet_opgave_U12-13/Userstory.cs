@@ -9,25 +9,26 @@ namespace ViPet_opgave_U12_13
         #region instance fields 
 
 
-        private string _text;
+        private string _name;
         private int _id;
+        
+        private UserstoryDetail _userstoryDetail;
 
+		#endregion
 
-        #endregion
-
-        #region Constructor 
-        public Userstory() 
+		#region Constructor 
+		public Userstory() 
         { 
-            _text = "";
+            _name = "";
             _id = 0;
-
+            _userstoryDetail = new UserstoryDetail();
         }
 
-
-        public Userstory(string text, int id) 
+        public Userstory(string name, int id, UserstoryDetail userstoryDetail) 
         { 
-            _text = text;
+            _name = name;
             _id = id;
+            _userstoryDetail = userstoryDetail;
         }
 
         #endregion
@@ -35,27 +36,33 @@ namespace ViPet_opgave_U12_13
         #region properties 
 
 
-        public string Text 
+        public string Name 
         { 
-            get { return _text; } 
-            set  { _text = value; } 
+            get { return _name; } 
+            set  { _name = value; } 
         }
         public int Id 
         { 
             get { return _id; } 
             set { _id = value; } 
         }
-        #endregion
 
-        #region methods
+        public UserstoryDetail UserstoryDetail 
+        { 
+            get { return _userstoryDetail; } 
+            set { _userstoryDetail = value; }
+		}
+		#endregion
+
+		#region methods
 
 
-        #endregion
+		#endregion
 
 
 
 
 
 
-    }
+	}
 }
