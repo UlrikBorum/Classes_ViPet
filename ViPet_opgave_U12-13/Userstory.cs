@@ -11,22 +11,24 @@ namespace ViPet_opgave_U12_13
 
         private string _name;
         private int _id;
+        
+        private UserstoryDetail _userstoryDetail;
 
+		#endregion
 
-        #endregion
-
-        #region Constructor 
-        public Userstory() 
+		#region Constructor 
+		public Userstory() 
         { 
             _name = "";
             _id = 0;
-
+            _userstoryDetail = new UserstoryDetail();
         }
 
-        public Userstory(string name, int id) 
+        public Userstory(string name, int id, UserstoryDetail userstoryDetail) 
         { 
             _name = name;
             _id = id;
+            _userstoryDetail = userstoryDetail;
         }
 
         #endregion
@@ -44,17 +46,23 @@ namespace ViPet_opgave_U12_13
             get { return _id; } 
             set { _id = value; } 
         }
-        #endregion
 
-        #region methods
+        public UserstoryDetail UserstoryDetail 
+        { 
+            get { return _userstoryDetail; } 
+            set { _userstoryDetail = value; }
+		}
+		#endregion
+
+		#region methods
 
 
-        #endregion
+		#endregion
 
 
 
 
 
 
-    }
+	}
 }
