@@ -9,7 +9,7 @@ namespace ViPet_opgave_U12_13
         #region instance fields 
 
 
-        private string _text;
+        private string _name;
         private int _id;
 
 
@@ -18,15 +18,14 @@ namespace ViPet_opgave_U12_13
         #region Constructor 
         public Userstory() 
         { 
-            _text = "";
+            _name = "";
             _id = 0;
 
         }
 
-
-        public Userstory(string text, int id) 
+        public Userstory(string name, int id) 
         { 
-            _text = text;
+            _name = name;
             _id = id;
         }
 
@@ -35,10 +34,10 @@ namespace ViPet_opgave_U12_13
         #region properties 
 
 
-        public string Text 
+        public string Name 
         { 
-            get { return _text; } 
-            set  { _text = value; } 
+            get { return _name; } 
+            set  { _name = value; } 
         }
         public int Id 
         { 
