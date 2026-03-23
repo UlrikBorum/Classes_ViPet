@@ -6,4 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\userstory\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ViPet_opgave_U12-13\ViPet_opgave_U12-13.csproj" />
+  </ItemGroup>
+
 </Project>
