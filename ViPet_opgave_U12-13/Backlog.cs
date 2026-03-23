@@ -49,22 +49,32 @@ namespace ViPet_opgave_U12_13
             _userstories.Add(us);
         }
 
-        public List<Userstory> RemoveUserstory(int id)
+
+        public void RemoveUserstory(int id)
         {
-            foreach (Userstory us in _userstories)
+            Userstory userstory = GetUserstory(id);
+            if (userstory != null)
             {
-                if (id == us.Id)
-                {
-                    _userstories.Remove(us);
-
-                    return _userstories;
-                }
-
-             }
-
-            return null;
+                _userstories.Remove(userstory);
+            }
         }
         
+
+        public Userstory GetUserstory(int id)
+        {
+            Userstory resUserStory = null; // if not found
+            foreach (Userstory u in _userstories)
+            {
+                if (u.Id == id)
+                {
+                    return u; // found eg. return value
+                }
+            }
+
+            return resUserStory;
+        }
+
+
         public List<Userstory> MoveUserstory (int id, Backlog targetBacklog)
         {
             foreach (Userstory us in _userstories)
