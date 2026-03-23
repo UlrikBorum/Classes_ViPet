@@ -15,10 +15,15 @@ UserstoryDetail usd1 = new UserstoryDetail("As a <type of user>\r\nI want <some 
 
 if (TestData)
 {
-    Userstory us1 = new Userstory("Owner",1,usd1);
-    Userstory us2 = new Userstory("Costumer1", 2, usd1);
-    Userstory us3 = new Userstory("Costumer2", 3, usd1);
-    Userstory us4 = new Userstory("Costumer3", 4, usd1);
+    Userstory us1 = new Userstory("Skoling i SCRUM",1,usd1);
+    Userstory us2 = new Userstory("Homepage", 2, usd1);
+    Userstory us3 = new Userstory("Product/sprint backlog", 3, usd1);
+    Userstory us4 = new Userstory("Møder i SCRUM", 4, usd1);
+
+    userstories.Add(us1);
+    userstories.Add(us2);
+    userstories.Add(us3);
+    userstories.Add(us4);
 }
 
 builder.Services.AddSingleton<Backlog>(new Backlog(userstories));
