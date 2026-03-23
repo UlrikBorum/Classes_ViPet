@@ -10,6 +10,9 @@ bool TestData = true;
 List<Userstory> userstories = new List<Userstory>();
 List<AcceptanceCriteria> ac1 = new List<AcceptanceCriteria>();
 
+List<Userstory> userstoriesSprint = new List<Userstory>();
+
+
 UserstoryDetail usd1 = new UserstoryDetail("As a <type of user>\r\nI want <some goal>\r\nso that <some reason>.", ac1);
 
 
@@ -24,10 +27,12 @@ if (TestData)
     userstories.Add(us2);
     userstories.Add(us3);
     userstories.Add(us4);
+    userstoriesSprint.Add(us1);
 }
 
 builder.Services.AddSingleton<Backlog>(new Backlog(userstories));
 
+builder.Services.AddSingleton<Userstory>(new Userstory("Skoling i SCRUM", 1, usd1));
 
 var app = builder.Build();
 
