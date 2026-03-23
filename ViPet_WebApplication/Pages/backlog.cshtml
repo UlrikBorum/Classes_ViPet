@@ -1,4 +1,21 @@
 ﻿@page
+@using ViPet_opgave_U12_13
 @model ViPet_WebApplication.Pages.backlogModel
 @{
 }
+
+
+<div>
+	<table class="table-hover"> 
+	<tbody>
+			@foreach (Userstory u in Model.Userstories.ListAll())
+		{
+			<tr>
+				<td>@u.Name</td>
+				<td>@u.Id</td>
+				
+			</tr>
+		}
+	</tbody>
+	</table>
+</div>
