@@ -89,7 +89,12 @@ namespace ViPet_opgave_U12_13
             return null;
 		}
 
-		#endregion
-	}
+        public List<Userstory> ListAll()
+        {
+            return new List<Userstory>(_userstories);
+        }
+
+        #endregion
+    }
 }
 

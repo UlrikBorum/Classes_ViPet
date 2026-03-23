@@ -1,0 +1,31 @@
+﻿@page
+@using ViPet_opgave_U12_13
+@model ViPet_WebApplication.Pages.backlogModel
+@{
+}
+
+<h1>PRODUCT BACKLOG</h1>
+<div class="row">
+	<table class="table table-hover"> 
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>ID</th>
+			</tr>
+		</thead>
+	<tbody>
+			@foreach (Userstory u in Model.Userstories.ListAll())
+		{
+				
+			<tr>
+				
+					
+					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name </a></td>
+					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Id </a></td>
+					
+			</tr>
+			
+		}
+	</tbody>
+	</table>
+</div>
