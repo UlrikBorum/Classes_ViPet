@@ -4,26 +4,26 @@ using System.Text;
 
 namespace ViPet_opgave_U12_13
 {
-    public class Backlog
+    public class SprintBacklog
     {
         #region instance fields 
 
         private List<Userstory> _userstories;
 
-   
+
 
         #endregion
 
         #region Constructor 
 
-        public Backlog()
+        public SprintBacklog()
         {
             _userstories = new List<Userstory>();
 
 
         }
 
-        public Backlog(List<Userstory> userstories)
+        public SprintBacklog(List<Userstory> userstories)
         {
             _userstories = userstories;
         }
@@ -44,11 +44,11 @@ namespace ViPet_opgave_U12_13
 
         #region methods
 
+        // Methods we had to ´re-use´ from Backlog.
         public void AddUserstory(Userstory us)
-        { 
+        {
             _userstories.Add(us);
         }
-
 
         public void RemoveUserstory(int id)
         {
@@ -58,8 +58,6 @@ namespace ViPet_opgave_U12_13
                 _userstories.Remove(userstory);
             }
         }
-        
-
         public Userstory GetUserstory(int id)
         {
             Userstory resUserStory = null; // if not found
@@ -74,30 +72,11 @@ namespace ViPet_opgave_U12_13
             return resUserStory;
         }
 
-
-        // We move a userstory from the Backlog list to the SprintBacklog list. 
-        public List<Userstory> MoveUserstory (int id, SprintBacklog targetBacklog)
-        {
-            foreach (Userstory us in _userstories)
-            {
-                if (id == us.Id)
-                {
-                    targetBacklog.AddUserstory(us);
-                    _userstories.Remove(us);
-                    return _userstories;
-                }
-            }
-            return null;
-		}
-
         public List<Userstory> ListAll()
         {
-            return new List<Userstory>(_userstories);
+            return _userstories;
         }
 
-
-        
         #endregion
     }
 }
-
