@@ -11,18 +11,17 @@
 			<tr>
 				<th>Name</th>
 				<th>ID</th>
+				<th>Delete</th>
 			</tr>
 		</thead>
 		<tbody>
-			@foreach (Userstory u in Model.Userstories.ListAll())
+			@foreach (Userstory u in Model.Backlogs.Sprint.ListAll())
 			{
 
 				<tr>
-
-
 					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name </a></td>
 					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Id </a></td>
-
+					<td></td>
 				</tr>
 
 			}

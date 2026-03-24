@@ -73,19 +73,19 @@ if (TestData)
 
 // Created a list from Backlog and a list from SprintBacklog so we can use them in AddSingleton (tests)
 Backlog product = new Backlog(userstories);
-SprintBacklog sprint = new SprintBacklog(userstoriesSprint);
+Backlog sprint = new Backlog(userstoriesSprint);
 
+
+Backlogs backlogs = new Backlogs(product, sprint);
 // Move userstories from product to sprint - make a button for user input?
-product.MoveUserstory(1, sprint);
-product.MoveUserstory(2, sprint);
-product.MoveUserstory(17, sprint);
-product.MoveUserstory(7, sprint);
-product.MoveUserstory(10, sprint);
+
+backlogs.MoveUserstory(1);
+backlogs.MoveUserstory(2);
 
 
 
-builder.Services.AddSingleton<Backlog>(product);
-builder.Services.AddSingleton<SprintBacklog>(sprint);
+builder.Services.AddSingleton<Backlogs>(backlogs);
+
 builder.Services.AddSingleton<Userstory>(new Userstory("Skoling i SCRUM", 1, usd1));
 
 var app = builder.Build();
