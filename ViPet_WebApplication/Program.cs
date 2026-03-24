@@ -78,11 +78,7 @@ Backlog sprint = new Backlog(userstoriesSprint);
 
 Backlogs backlogs = new Backlogs(product, sprint);
 // Move userstories from product to sprint - make a button for user input?
-product.MoveUserstory(1, sprint);
-product.MoveUserstory(2, sprint);
-product.MoveUserstory(17, sprint);
-product.MoveUserstory(7, sprint);
-product.MoveUserstory(10, sprint);
+
 backlogs.MoveUserstory(1);
 backlogs.MoveUserstory(2);
 

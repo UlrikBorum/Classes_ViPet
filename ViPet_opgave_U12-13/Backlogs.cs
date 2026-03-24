@@ -27,11 +27,11 @@ namespace ViPet_opgave_U12_13
 
 
         public Backlog Product { get { return _product; } set { _product = value; } }
-        public Backlog sprint {  get { return _sprint; } set  { _sprint = value; } }
+        public Backlog Sprint {  get { return _sprint; } set  { _sprint = value; } }
 
 
 
-
+        // We move a userstory from the Backlog list to the SprintBacklog list. 
         public Backlogs MoveUserstory(int id)
         {
             Backlogs newBacklogs = new Backlogs(_product,_sprint);
