@@ -28,8 +28,6 @@ namespace ViPet_opgave_U12_13
             _userstories = userstories;
         }
 
-
-
         #endregion
 
         #region properties 
