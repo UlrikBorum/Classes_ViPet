@@ -1,5 +1,5 @@
 ﻿@page
-
+@using ViPet_opgave_U12_13
 @model ViPet_WebApplication.Pages.UserstoryModel
 @{
 }
@@ -10,6 +10,12 @@
         <h2> @Model.Us.Id</h2>
     
     <p>@Model.Us.UserstoryDetail.Description</p>
+
+        @foreach(AcceptanceCriteria s in Model.Us.UserstoryDetail.ListAll())
+    {
+        <p>@s.Text</p>
+	}
+
 
 
     <div></div>
