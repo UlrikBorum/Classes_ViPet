@@ -8,9 +8,13 @@ namespace ViPet_WebApplication.Pages
     {
         private Userstory _us;
 
+
+     
+
         public UserstoryModel (Userstory userstory)
         {
             _us = userstory;
+         
         }
 
         public Userstory Us
@@ -18,7 +22,9 @@ namespace ViPet_WebApplication.Pages
             get { return _us; } 
         }
 
-        public void OnGet()
+     
+
+		public void OnGet()
         {
         }
     }

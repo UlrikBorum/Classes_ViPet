@@ -48,6 +48,10 @@ namespace ViPet_opgave_U12_13
 
 		#region methods
 
+		public List<AcceptanceCriteria> ListAll()
+		{
+			return new List<AcceptanceCriteria>(_acList);
+		}
 
 		#endregion
 	}

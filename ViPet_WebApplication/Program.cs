@@ -13,8 +13,15 @@ List<Userstory> userstories = new List<Userstory>();
 List<Userstory> userstoriesSprint = new List<Userstory>();
 List<AcceptanceCriteria> ac1 = new List<AcceptanceCriteria>();
 
+AcceptanceCriteria acA = new AcceptanceCriteria("Display a webpage with 2 collums");
+AcceptanceCriteria acB = new AcceptanceCriteria("Collum with product backlog");
+AcceptanceCriteria acC = new AcceptanceCriteria("Collum with sprint backlog");
+ac1.Add(acA);
+ac1.Add(acB);
+ac1.Add(acC);
+
 // Can´t move this to TestData, our AddSingleton.Userstory can´t find it otherwise. Test if we can call a userstory from TestData.
-UserstoryDetail usd1 = new UserstoryDetail("As a <type of user>\r\nI want <some goal>\r\nso that <some reason>.", ac1);
+UserstoryDetail usd1 = new UserstoryDetail("As a teacher \r\n I want to be able to show my students visually how a Scrum Board  looks. So that i can teach them how to work", ac1);
 
 
 if (TestData)
