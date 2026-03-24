@@ -16,15 +16,15 @@
 		<tbody>
 			@foreach (Userstory u in Model.Userstories.ListAll())
 			{
-				@if(u.Id == 1){
+
 				<tr>
 
 
-					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name</a></td>
+					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name </a></td>
 					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Id </a></td>
 
 				</tr>
-				}
+
 			}
 		</tbody>
 	</table>
