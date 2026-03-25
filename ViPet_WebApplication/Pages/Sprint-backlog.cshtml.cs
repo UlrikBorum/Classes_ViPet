@@ -8,19 +8,19 @@ namespace ViPet_WebApplication.Pages
     {
 
 
-        private SprintBacklog _userstories;
+        private Backlogs _backlogs;
 
-        public Sprint_backlogModel(SprintBacklog userstories)
+        public Sprint_backlogModel(Backlogs backlogs)
         {
-            _userstories = userstories;
+            _backlogs = backlogs;
         }
         
 
 
-        public SprintBacklog Userstories
+        public Backlogs Backlogs
         {
-            get { return _userstories; }
-            set { _userstories = value; }
+            get { return _backlogs; }
+            set { _backlogs = value; }
                 
         }
 

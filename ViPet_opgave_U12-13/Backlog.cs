@@ -73,20 +73,7 @@ namespace ViPet_opgave_U12_13
         }
 
 
-        // We move a userstory from the Backlog list to the SprintBacklog list. 
-        public List<Userstory> MoveUserstory (int id, SprintBacklog targetBacklog)
-        {
-            foreach (Userstory us in _userstories)
-            {
-                if (id == us.Id)
-                {
-                    targetBacklog.AddUserstory(us);
-                    _userstories.Remove(us);
-                    return _userstories;
-                }
-            }
-            return null;
-		}
+        
 
         public List<Userstory> ListAll()
         {

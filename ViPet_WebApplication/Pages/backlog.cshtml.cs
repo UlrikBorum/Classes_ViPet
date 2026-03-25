@@ -9,16 +9,16 @@ namespace ViPet_WebApplication.Pages
     {
 
 
-        private Backlog _userstories;
+        private Backlogs _backlogs;
 
-        public backlogModel(Backlog userstories)
+        public backlogModel(Backlogs userstories)
         {
-            _userstories = userstories;
+            _backlogs = userstories;
         }
 
-        public Backlog Userstories
+        public Backlogs Backlogs
         {
-            get { return _userstories; }
+            get { return _backlogs; }
         }
 
         public void OnGet()
