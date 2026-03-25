@@ -43,8 +43,19 @@ namespace ViPet_opgave_U12_13
         #region methods
 
         public void AddUserstory(Userstory us)
-        { 
-            _userstories.Add(us);
+        {
+            int id = 0;
+
+            foreach (var item in _userstories) 
+            {
+                if (item.Id > id)
+                {
+                    id = item.Id;
+                }
+
+			}
+            us.Id = id + 1;
+			_userstories.Add(us);
         }
 
 
