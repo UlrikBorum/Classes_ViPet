@@ -5,15 +5,24 @@
 }
 
 <h1>PRODUCT BACKLOG</h1>
+
+<form method="post">
+<a class="btn btn-success" asp-area="" asp-page="/CreateUserstory"> Create Userstory </a>
+</form>
+
+
 <div class="row">
 	<table class="table table-hover"> 
 		<thead>
 			<tr>
 				<th>Name</th>
 				<th>ID</th>
+				<th></th>
+				<th></th>
 			</tr>
 		</thead>
 	<tbody>
+		<form method="post">
 			@foreach (Userstory u in Model.Backlogs.Product.ListAll())
 		{
 				
@@ -21,11 +30,14 @@
 				
 					
 					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name </a></td>
+
 					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Id </a></td>
-					
+					<td><input type="submit" asp-page-handler="Delete" asp-route-id="@u.Id" value="Delete Userstory" /></td>
+					<td><input type="submit" asp-page-handler="Move" asp-route-id="@u.Id" value="Move Userstory" /></td>
 			</tr>
 			
 		}
+			</form>
 	</tbody>
 	</table>
 </div>
