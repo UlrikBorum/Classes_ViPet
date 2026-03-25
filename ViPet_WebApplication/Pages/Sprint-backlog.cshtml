@@ -6,25 +6,34 @@
 
 <h1>SPRINT BACKLOG</h1>
 <div class="row">
+	
+	
 	<table class="table table-hover">
 		<thead>
 			<tr>
 				<th>Name</th>
 				<th>ID</th>
-				<th>Delete</th>
+				<th></th>
+				
 			</tr>
 		</thead>
 		<tbody>
+			<form method="post">
+
 			@foreach (Userstory u in Model.Backlogs.Sprint.ListAll())
 			{
 
 				<tr>
 					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name </a></td>
 					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Id </a></td>
-					<td></td>
+					
+					<td><input type ="submit" asp-page-handler="delete" asp-route-id="@u.Id" value="Delete Userstory"/></td>
+				
+					
 				</tr>
 
 			}
+			</form>
 		</tbody>
 	</table>
 </div>
