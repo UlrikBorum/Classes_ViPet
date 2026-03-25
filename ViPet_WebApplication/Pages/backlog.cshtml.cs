@@ -11,9 +11,9 @@ namespace ViPet_WebApplication.Pages
 
         private Backlogs _backlogs;
 
-        public backlogModel(Backlogs userstories)
+        public backlogModel(Backlogs backlogs)
         {
-            _backlogs = userstories;
+            _backlogs = backlogs;
         }
 
         public Backlogs Backlogs
@@ -23,6 +23,19 @@ namespace ViPet_WebApplication.Pages
 
         public void OnGet()
         {
+        }
+
+
+        public void OnPostDelete(int id)
+        {
+            Backlogs.Product.RemoveUserstory(id);
+
+        }
+
+        public void OnPostMove(int id)
+        {
+            Backlogs.MoveUserstory(id);
+
         }
     }
 }

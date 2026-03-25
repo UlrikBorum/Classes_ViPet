@@ -10,7 +10,7 @@ namespace ViPet_opgave_U12_13
         private Backlog _sprint;
 
 
-
+        #region constructor
         public Backlogs (Backlog product, Backlog sprint)
         {
             _product = product;
@@ -25,6 +25,7 @@ namespace ViPet_opgave_U12_13
 
         }
 
+        #endregion
 
         public Backlog Product { get { return _product; } set { _product = value; } }
         public Backlog Sprint {  get { return _sprint; } set  { _sprint = value; } }

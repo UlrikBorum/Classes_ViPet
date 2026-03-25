@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ViPet_opgave_U12_13;
@@ -14,20 +15,28 @@ namespace ViPet_WebApplication.Pages
         {
             _backlogs = backlogs;
         }
-        
 
 
+
+
+      
         public Backlogs Backlogs
         {
             get { return _backlogs; }
             set { _backlogs = value; }
-                
         }
 
- 
+
 
         public void OnGet()
         {
+        }
+
+        public void OnPostDelete(int id)
+        {
+           
+            Backlogs.Sprint.RemoveUserstory(id);
+        
         }
     }
 }
