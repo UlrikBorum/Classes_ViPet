@@ -4,22 +4,15 @@
 @{
 }
 
-<div>
-    <center>
-        <h1> @Model.Us.Name</h1>
-        <h2> @Model.Us.Id</h2>
-    
-    <p>@Model.Us.UserstoryDetail.Description</p>
+<body class="backdrop">
+<div class="section1">
+    <div class="overskrift">@Model.Us.Name</div>
+    <div class="overskrift2">@Model.Us.Id</div>
+    <div class="detail">@Model.Us.UserstoryDetail.Description</div>
 
-        @foreach(AcceptanceCriteria s in Model.Us.UserstoryDetail.ListAll())
+    @foreach (AcceptanceCriteria s in Model.Us.UserstoryDetail.ListAll())
     {
         <p>@s.Text</p>
-	}
-
-
-
-    <div></div>
-    </center>
-    
-
+    }
 </div>
+</body>
