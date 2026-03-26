@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  /*background-image: MANGLER fra Ulrik;*/
+    margin-bottom: 60px;
+   background-image: url('../background.png');
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -36,9 +36,8 @@ body {
 /* NEW STUFF IS ADDED UNDER THIS LINE */
 
 /* POST IT LOOK ON USERSTORY */
-.userstory1 {
 
-.section1 {
+.userstory1 {
   border-radius: 25px;
   background-color: #FCECA5;
   padding: 20px;
