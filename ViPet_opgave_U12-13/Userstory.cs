@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ViPet_opgave_U12_13
+namespace ViPet_opgave_U12_13;
 
-// // we create a class called Userstories. This class has a string field called Text and an int called id
+// we create a class called Userstories. This class has a string field called Text and an int called id
 	public class Userstory
     {
     #region instance fields 
