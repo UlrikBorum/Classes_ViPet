@@ -57,11 +57,7 @@ body {
         font-weight: 500;
         font-style: normal;
     }
-    /* TABLE LINES WITH THE COLOR RED */
-    table, th, td {
-        border-color: #e63256;
-        text-align: center;
-    }
+   
     /* HEADER/HEADLINES STUFF */
     h1 {
         text-align: center;
@@ -144,3 +140,23 @@ body {
         background-color: #1a1d20;
         color: white;
     }
+/* USERSTORY POST IT SETUP FOR PRODUCT BACKLOG INDIVIDUAL */
+.userstory2 {
+    border-radius: 25px;
+    background-color: #FCECA5;
+    padding: 20px;
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 8px 10px #1a1d20;
+    margin: 20px;
+}
+
+/* TABLE LINES WITH THE COLOR RED */
+table, th, td, tr {
+    border-color: #e63256;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 25px;
+    padding: 20px;
+}

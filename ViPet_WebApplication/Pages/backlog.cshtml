@@ -12,33 +12,24 @@
 </form>
 
 
-<div class="row">
-	<table class="table table-hover"> 
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>ID</th>
-				<th></th>
-				<th></th>
-			</tr>
-		</thead>
-	<tbody>
-		<form method="post">
-			@foreach (Userstory u in Model.Backlogs.Product.ListAll())
-		{
-				
-			<tr>
-				
-					
-					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name </a></td>
+<table class="table table-hover">
+<th>Back</th>
+<th>To</th>
+<th>Homepage</th>
+<th></th>
 
-					<td> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Id </a></td>
-					<td><input type="submit" asp-page-handler="Delete" asp-route-id="@u.Id" value="Delete Userstory" /></td>
-					<td><input type="submit" asp-page-handler="Move" asp-route-id="@u.Id" value="Move Userstory" /></td>
-			</tr>
-			
-		}
-			</form>
-	</tbody>
-	</table>
+<div class="row">
+    <form method="post">
+        @foreach (Userstory u in Model.Backlogs.Product.ListAll())
+        {
+            <div class="userstory2">
+                <p> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Name <br></a></p>
+                <p> <a class="nav-link text-dark" asp-area="" asp-page="/Userstory"> @u.Id <br></a></p>
+                <p><input type="submit" asp-page-handler="Delete" asp-route-id="@u.Id" value="Delete Userstory" /><br></p>
+                <p><input type="submit" asp-page-handler="Move" asp-route-id="@u.Id" value="Move Userstory" /><br></p>
+            </div>
+
+        }
+    </form>
 </div>
+</table>
