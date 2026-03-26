@@ -10,23 +10,22 @@ namespace ViPet_opgave_U12_13
 	public class Backlog
     {
         #region instance fields 
-
+        // This field is a list of userstories in the backlog.
         private List<Userstory> _userstories;
 
 
 
 		#endregion
 
-		#region Constructor 
-		//We also have a default constructor that initializes the list of Userstory objects to an empty list.
-		public Backlog()
+        #region Constructor 
+        // This constructor initializes the backlog with an empty list of userstories.
+        public Backlog()
         {
             _userstories = new List<Userstory>();
 
 
         }
-		//We also have a constructor that takes a list of Userstory objects as a parameter and sets the instance field to that parameter.
-
+        // This constructor initializes the backlog with a given list of userstories.
 		public Backlog(List<Userstory> userstories)
         {
             _userstories = userstories;
@@ -34,9 +33,9 @@ namespace ViPet_opgave_U12_13
 
 		#endregion
 
-		#region properties 
-		//We also have a property for the list of Userstory objects, which allows us to get and set the value of the list of Userstory objects. 
-		public List<Userstory> Userstories
+        #region properties 
+        // This property allows access to the list of userstories in the backlog.
+        public List<Userstory> Userstories
         {
             get { return _userstories; }
             set { _userstories = value; }
@@ -44,9 +43,10 @@ namespace ViPet_opgave_U12_13
 
 		#endregion
 
-		#region methods
-		//We also have methods for adding, removing, and getting Userstory objects from the list of Userstory objects.
-		public void AddUserstory(Userstory us)
+        #region methods
+        // This method adds a userstory to the backlog. It contains a parameter of type Userstory.
+        // The method should automatically assign an id to the userstory, which is one higher than the highest id currently in the backlog.
+        public void AddUserstory(Userstory us)
         {
             int id = 0;
 
@@ -62,7 +62,7 @@ namespace ViPet_opgave_U12_13
 			_userstories.Add(us);
         }
 
-
+        // This method takes an id as a parameter and removes the userstory with that id from the backlog. If no userstory with that id exists, the method should do nothing.
         public void RemoveUserstory(int id)
         {
             Userstory userstory = GetUserstory(id);
@@ -71,8 +71,8 @@ namespace ViPet_opgave_U12_13
                 _userstories.Remove(userstory);
             }
         }
-        
 
+        // This method takes an id as a parameter and returns the userstory with that id. If no userstory with that id exists, it should return null.
         public Userstory GetUserstory(int id)
         {
             Userstory resUserStory = null; // if not found
@@ -88,8 +88,8 @@ namespace ViPet_opgave_U12_13
         }
 
 
-        
 
+        // This method returns a list of all userstories in the backlog.
         public List<Userstory> ListAll()
         {
             return new List<Userstory>(_userstories);

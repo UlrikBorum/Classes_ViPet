@@ -9,7 +9,7 @@ namespace ViPet_opgave_U12_13
 	public class Backlogs
     {
 		#region instance fields
-		//his class has two instance fields, one for the product backlog and one for the sprint backlog.Both of these fields are of type Backlog.
+		//This class has two instance fields, one for the product backlog and one for the sprint backlog.Both of these fields are of type Backlog.
 		private Backlog _product;
         private Backlog _sprint;
 		#endregion
