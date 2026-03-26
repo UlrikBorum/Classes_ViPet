@@ -19,8 +19,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  /*background-image: MANGLER fra Ulrik;*/
+    margin-bottom: 60px;
+    /*background-image: MANGLER fra Ulrik;*/
+    background-image: url('../background.png');
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
