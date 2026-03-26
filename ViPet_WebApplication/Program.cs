@@ -28,21 +28,21 @@ UserstoryDetail usd1 = new UserstoryDetail("As a teacher \r\n I want to be able 
 if (TestData)
 {
 
-    Userstory us1 = new Userstory("Scooling in SCRUM",1,usd1);
+    Userstory us1 = new Userstory("Schooling in SCRUM",1,usd1);
     Userstory us2 = new Userstory("Homepage", 2, usd1);
     Userstory us3 = new Userstory("Product/sprint backlog", 3, usd1);
     Userstory us4 = new Userstory("Meetings in SCRUM", 4, usd1);
-	Userstory us5 = new Userstory("Scooling in SCRUM", 5, usd1);
+	Userstory us5 = new Userstory("Schooling in SCRUM", 5, usd1);
 	Userstory us6 = new Userstory("Homepage", 6, usd1);
 	Userstory us7 = new Userstory("Product/sprint backlog", 7, usd1);
 	Userstory us8 = new Userstory("Meetings in SCRUM", 8, usd1);
 	Userstory us9 = new Userstory("Product/sprint backlog", 9, usd1);
 	Userstory us10 = new Userstory("Meetings in SCRUM", 10, usd1);
-	Userstory us11 = new Userstory("Scooling in SCRUM", 11, usd1);
+	Userstory us11 = new Userstory("Schooling in SCRUM", 11, usd1);
 	Userstory us12 = new Userstory("Homepage", 12, usd1);
 	Userstory us13 = new Userstory("Product/sprint backlog", 13, usd1);
 	Userstory us14 = new Userstory("Meetings in SCRUM", 14, usd1);
-	Userstory us15 = new Userstory("Scooling in SCRUM", 15, usd1);
+	Userstory us15 = new Userstory("Schooling in SCRUM", 15, usd1);
 	Userstory us16 = new Userstory("Homepage", 16, usd1);
 	Userstory us17 = new Userstory("Product/sprint backlog", 17, usd1);
 	Userstory us18 = new Userstory("Meetings in SCRUM", 18, usd1);
@@ -88,7 +88,7 @@ backlogs.MoveUserstory(2);
 
 builder.Services.AddSingleton<Backlogs>(backlogs);
 
-builder.Services.AddSingleton<Userstory>(new Userstory("Scooling in SCRUM", 1, usd1));
+builder.Services.AddSingleton<Userstory>(new Userstory("Schooling in SCRUM", 1, usd1));
 
 var app = builder.Build();
 
