@@ -5,30 +5,31 @@ using ViPet_opgave_U12_13;
 
 namespace ViPet_WebApplication.Pages
 {
-    public class Sprint_backlogModel : PageModel
+	//// This is the code-behind file for the create user story page. It contains the logic for handling the requests and responses for the create user story page.
+	public class Sprint_backlogModel : PageModel
     {
 
+		#region instance field
+		private Backlogs _backlogs;
+		#endregion
 
-        private Backlogs _backlogs;
-
-        public Sprint_backlogModel(Backlogs backlogs)
+		#region constructor
+		public Sprint_backlogModel(Backlogs backlogs)
         {
             _backlogs = backlogs;
         }
+		#endregion
 
-
-
-
-      
-        public Backlogs Backlogs
+		#region properties
+		public Backlogs Backlogs
         {
             get { return _backlogs; }
             set { _backlogs = value; }
         }
+		#endregion
 
-
-
-        public void OnGet()
+		#region methods
+		public void OnGet()
         {
         }
 
@@ -38,5 +39,7 @@ namespace ViPet_WebApplication.Pages
             Backlogs.Sprint.RemoveUserstory(id);
         
         }
-    }
+
+		#endregion
+	}
 }
