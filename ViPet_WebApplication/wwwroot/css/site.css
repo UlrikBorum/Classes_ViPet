@@ -33,39 +33,92 @@ body {
 }
 
 
-/* Det herunder er ekstra Julle har tilføjet */
+/* NEW STUFF IS ADDED UNDER THIS LINE */
+
+/* POST IT LOOK ON USERSTORY */
+.userstory1 {
 
 .section1 {
   border-radius: 25px;
   background-color: #FCECA5;
   padding: 20px;
-  position: static;
-  text-align: center;
+@@ -42,77 +43,28 @@ body {
   width: 100%;
   height: 700px;
   box-shadow: 0 8px 20px #1a1d20;
+  margin-top: 60px;
 }
+
+/* FONT ADDED TO TEST - WORKS */
 .inter-font {
           font-family: "Inter", sans-serif;
           font-optical-sizing: auto;
           font-weight: 500;
           font-style: normal;
         }
+
+/* TABLE LINES WITH THE COLOR RED */ 
+table, th, td {
+  border-color: #e63256;
+  text-align: center;
+}
+
+/* HEADER/HEADLINES STUFF */
 h1 {
   text-align: center;
   font-size: 50px;
   color: #e63256;
   font-family: "Inter",sans-serif;
+  margin-top: 60px;
 }
 h2 {
   text-align: center;
+  font-size: 32px;
   font-size: 40px;
   color: #e63256;
   font-family: "Inter", sans-serif;
+}
+h3 {
+  text-align: center;
+  font-size: 22px;
+  color: #e63256;
+  font-family: "Inter", sans-serif;
+}
+h1edit {
+  margin-top: 20%;
+}
+
+/* OTHERS */
+.dividers {
+  border: 1px solid #e63256;
 }
  
 .detail {
   text-align: center;
   font-size: 14px;
   width: 100%;
+}
+.pstyling {
+  color: #ffffff
+}
+
+
+/* FOR FRONTPAGE FUCKERY*/
+.column {
+  float: left;
+  width: 33.33%;
+  align-content: center;
+  text-align: center;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left, .right {
+  width: 25%;
+}
+.middle {
+  width: 50%;
 }
