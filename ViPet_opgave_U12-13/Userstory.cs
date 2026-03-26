@@ -7,7 +7,7 @@ namespace ViPet_opgave_U12_13
 // // we create a class called Userstories. This class has a string field called Text and an int called id
 	public class Userstory
     {
-        #region instance fields 
+    #region instance fields 
 
 
         private string _name;
@@ -56,7 +56,7 @@ namespace ViPet_opgave_U12_13
 		}
 		#endregion
 
-		#region methods
+	#region methods
 
 
 		#endregion
