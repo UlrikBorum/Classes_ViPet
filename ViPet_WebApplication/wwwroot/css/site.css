@@ -132,3 +132,15 @@ body {
     color: #ffffff
 }
 
+/* BUTTON UNDER PRODUCT BACKLOG */
+.crbutton {
+    text-align: center;
+    background-color: #e63256;
+    width: 15%;
+    transition-duration: 0.4s;
+}
+
+    .crbutton:hover {
+        background-color: #1a1d20;
+        color: white;
+    }

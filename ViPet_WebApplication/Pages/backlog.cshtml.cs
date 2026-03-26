@@ -8,20 +8,29 @@ namespace ViPet_WebApplication.Pages
     public class backlogModel : PageModel
     {
 
+		#region instance fields
 
-        private Backlogs _backlogs;
+		private Backlogs _backlogs;
 
-        public backlogModel(Backlogs backlogs)
+		#endregion
+
+		#region constructor
+		public backlogModel(Backlogs backlogs)
         {
             _backlogs = backlogs;
         }
+		#endregion
 
-        public Backlogs Backlogs
+		#region properties
+		public Backlogs Backlogs
         {
             get { return _backlogs; }
         }
 
-        public void OnGet()
+		#endregion
+
+		#region methods
+		public void OnGet()
         {
         }
 
@@ -38,5 +47,6 @@ namespace ViPet_WebApplication.Pages
             Backlogs.MoveUserstory(id);
 
         }
-    }
+		#endregion
+	}
 }

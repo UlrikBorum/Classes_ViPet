@@ -78,8 +78,8 @@ Backlog sprint = new Backlog(userstoriesSprint);
 
 // When creating Backlogs, you need to have product object first in the parameters. This makes it so our method for MoveUserstory works as intended.
 Backlogs backlogs = new Backlogs(product, sprint);
-// Move userstories from product to sprint - make a button for user input?
 
+// Move userstories from product to sprint - make a button for user input?
 backlogs.MoveUserstory(1);
 backlogs.MoveUserstory(2);
 

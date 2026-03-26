@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using System.Text;
 
 namespace ViPet_opgave_U12_13
 {
-    public class Backlog
+	// we create a class called Backlog. This class has a list of Userstory objects as an instance field.
+	public class Backlog
     {
         #region instance fields 
         // This field is a list of userstories in the backlog.
@@ -12,7 +15,7 @@ namespace ViPet_opgave_U12_13
 
 
 
-        #endregion
+		#endregion
 
         #region Constructor 
         // This constructor initializes the backlog with an empty list of userstories.
@@ -23,12 +26,12 @@ namespace ViPet_opgave_U12_13
 
         }
         // This constructor initializes the backlog with a given list of userstories.
-        public Backlog(List<Userstory> userstories)
+		public Backlog(List<Userstory> userstories)
         {
             _userstories = userstories;
         }
 
-        #endregion
+		#endregion
 
         #region properties 
         // This property allows access to the list of userstories in the backlog.
@@ -38,7 +41,7 @@ namespace ViPet_opgave_U12_13
             set { _userstories = value; }
         }
 
-        #endregion
+		#endregion
 
         #region methods
         // This method adds a userstory to the backlog. It contains a parameter of type Userstory.
